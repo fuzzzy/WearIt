@@ -2,6 +2,7 @@ package by.dev.product.demo.wearit;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
@@ -98,6 +99,11 @@ public class MainActivity extends Activity {
     }
 
     private void showDialog() {
+        showDialogWithFragment();
+        //showDialogWithDialog();
+    }
+
+    private void showDialogWithDialog() {
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.dialog);
         dialog.setCanceledOnTouchOutside(true);
@@ -108,6 +114,11 @@ public class MainActivity extends Activity {
             }
         });
         dialog.show();
+    }
+
+    public void showDialogWithFragment() {
+        DialogFragment newFragment = new DemoDialogFragment();
+        newFragment.show(getFragmentManager(), "lol");
     }
 
     private void showConfirmation(String text) {
