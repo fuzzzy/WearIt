@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WearIt</string>
+    <string name="hello_round">Yes, my master!</string>
+    <string name="hello_square">Hey, sup man...</string>
+    <string name="choise_dialog">Dialog</string>
+    <string name="choise_card">Card</string>
+    <string name="choise_ping">Ping</string>
+    <string name="dialog_text">Do you like dialogs?</string>
+    <string name="confirmation_text">Cool! We\'re done!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pinged">Pinged!</string>
+    <string name="card_title">Wow, such card</string>
+    <string name="card_text">Very information</string>
+</resources>

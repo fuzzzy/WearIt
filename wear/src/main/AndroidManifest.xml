@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="by.dev.product.demo.wearit" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <!-- Main activity will be launched when you say "Start Demo"
+         Assign necessary name to android:label -->
+        <activity android:name=".MainActivity" android:label="Demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- this one is needed if you want to show default style confirmations! -->
+        <activity
+            android:name="android.support.wearable.activity.ConfirmationActivity">
+        </activity>
+
+    </application>
+
+</manifest>
